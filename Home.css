@@ -169,7 +169,7 @@ body {
   .social-icons a {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 11px;
     text-decoration: none;
     color: inherit;
     font-size: 32px;
