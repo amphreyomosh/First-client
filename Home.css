@@ -150,20 +150,20 @@ body {
   }
   #imageOne {
     width: 90%;
-    max-width: 390px;
+    max-width: 360px;
     height: auto;
   }
 
   #imageTwo {
     width: 90%;
-    max-width: 360px;
+    max-width: 350px;
     height: auto;
     transform: translateY(50px);
   }
 
   .introText {
     margin-right: auto;
-    transform: translateX(12px);
+    transform: translateX(9px);
     display: flex;
     align-items: center;
     font-size: 15px;
