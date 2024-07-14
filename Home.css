@@ -102,6 +102,16 @@ body {
   .nav-menu.active {
     display: flex;
   }
+  #logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+    border-radius: 50%;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*=================================================
@@ -109,17 +119,22 @@ body {
   =================================================*/
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  .containerHome {
+  .containerHome,
+  #footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
   }
+  #footer {
+    height: auto;
+    width: 100%;
+    bottom: 0;
+  }
+
   #introduction {
     display: flex;
     flex-wrap: wrap;
@@ -133,13 +148,13 @@ body {
   }
   #imageOne {
     width: 90%;
-    max-width: 350px;
+    max-width: 360px;
     height: auto;
   }
 
   #imageTwo {
     width: 90%;
-    max-width: 350px;
+    max-width: 360px;
     height: auto;
     transform: translateY(50px);
   }
@@ -173,10 +188,10 @@ body {
     font-size: 18px;
     margin: 0 5px;
   }
+
   .copyrights {
-    display: flex;
-    justify-content: center;
-    font-size: 15;
+    color: red;
+    font-size: 14;
   }
 }
 
@@ -376,6 +391,33 @@ button:hover {
   transition: 1.2s;
   border: 2px solid white;
 }
+/* small screen stylings for contact page */
+
+@media screen and (max-width: 768px) {
+.contactpage {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info,
+.contact-form {
+  background-color: rgb(24, 22, 22);
+  padding: 2em;
+  margin: 1em;
+  width: 330px;
+  color: white;
+}
+#contactimage {
+  margin-top: 30px;
+  width: 400px;
+  height: 330px;
+  border-radius: 10px;
+}
+#iconicImage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+}
 
 /*=============================================
   styling the social media icons         
@@ -394,7 +436,6 @@ button:hover {
   .social-icons a {
     margin: 10px; /* Space between icons */
     color: inherit;
-
     text-decoration: none;
     font-size: 24px; /* Adjusted font size to a more reasonable value */
   }
@@ -404,7 +445,6 @@ button:hover {
   display: flex;
   margin-top: 50px;
   color: white;
-  /* transform: translateX(110px); */
 }
 
 .social-icons a {
@@ -433,6 +473,24 @@ button:hover {
   margin: 10px;
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  #mestalon,
+  #danyg,
+  #crevious {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .imagesection {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeImages {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* ======================================================================
       Styling for the about page
@@ -454,7 +512,17 @@ button:hover {
   flex-wrap: wrap;
   margin: 30px;
 }
-
+/*=============+==============================
+    about in small screen
+  ============================================*/
+@media screen and (max-width: 768px) {
+  #aboutimages {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 10px;
+  }
+}
 /*============================================================
       styling for projects page
  =============================================================*/
